@@ -1,0 +1,61 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+h1,h2,h3{
+	color: green;
+}
+ul{
+	list-style-image: url("C:\Users\omkar\Desktop\Website project\Coffee prep-images/coffee-logo.jpg");
+
+}
+a:link,a:visited{
+	text-decoration: none;
+	color: brown;
+	font-weight: bold;
+}
+button{
+	border-radius: 20px;
+	border: 1px solid #FF0000;
+	background: #FF0000;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+}
+.photo{
+	float: left;
+	margin-right: 20px;
+	font-weight: bold;
+}
+header{
+	background-image: url("Coffee prep-images/coffee-beans.jfif");
+	height: 92px;
+	margin-bottom: 70px;
+}
+header h1{
+	color: rgba(256,256,256,0.8);
+	margin-left: 30px;
+	margin-top: 30px;
+	font-size: 50px;
+
+}
+footer{
+	margin: 40px 0;
+}
+footer nav a:link,footer nav a:visited{
+	color: gray;
+	text-decoration: none;
+	display: block;
+	width: 130px;
+	text-align: center;
+	background-color: white;
+}
+footer a:hover{
+	color: black;
+}
+video{
+	margin-bottom: 20px;
+	margin-left: 160px;
+}
+

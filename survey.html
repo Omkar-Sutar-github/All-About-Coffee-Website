@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>All about Coffee</title>
+	<link rel="icon" href="C:\Users\omkar\Desktop\Coffee-Website project\Coffee prep-images/Coffee-logo.jpg">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<style type="text/css">
+		aside{
+	width: 300px;
+	float: right;
+	background-color: #87CEEB;
+	font-weight: bold;
+	padding: 20px;
+	margin-left: 20px;
+	margin-right: 200px;
+	margin-bottom: 80px;
+		}
+		nav ul{
+			list-style-type: none;
+		}
+		nav li{
+			display: inline;
+			float: left;
+		}
+		nav a:link,a:visited{
+			background-color: red;
+			color: white;
+			display: block;
+			width: 130px;
+			text-align: center;
+			padding: 10px;
+		}
+		nav a:hover{
+			background-color: blue;
+		}
+		
+	</style>
+<body>
+	<header>
+		<h1>All About Coffee</h1>
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="Roasting.html">Roasting</a></li>
+			<li><a href="coffee grinding.html">Coffee Grinding</a></li>
+			<li><a href="Brewing.html">Brewing</a></li>
+			<li><a href="drinks.html">Drinks</a></li>
+			<li><a href="survey.html">survey</a></li>
+		</ul>
+	</nav>
+	</header>
+	 <h1>Coffee-Survey</h1>
+	 <aside>
+	 	<figure>
+	 		<img src="C:\Users\omkar\Desktop\Coffee-Website project\Coffee prep-images/coffee-survey.jpg" width="280" height="280">
+	 	</figure>
+	 </aside>
+	<form action="coffee-survey.py" method="post">
+		<fieldset>
+			<legend>Personal information</legend>
+			<label for="first-name">Your Name:</label><br/>
+		<input type="text" name="first name" id="first-name" placeholder="Your Name" required size="30" />
+		<br/>
+
+		<label for="email">Email:</label><br/>
+		<input type="email" name="email" placeholder="Email" id="email" required size="30" />
+		<br/>
+
+		<label for="password">Password:</label><br/>
+		<input type="password" name="password" placeholder="Password" id="password" required size="30" />
+		<br/>
+
+		<label for="number">Mobile Number:</label><br/>
+		<input type="number" name="number" placeholder="Mobile Number" id="number">
+        <br/>
+		</fieldset>
+
+        <fieldset> 
+        <legend>Your coffee preferences</legend>
+		<label for="preparation">Tell us your coffee preparation methods.</label><br/>
+        <textarea name="preparation" placeholder="Type your message here" cols="40" rows="6" id="preparation"></textarea>
+        <br/><br/>
+
+        <label for="radio">Do you grind your beans?</label><br/>
+        <input id="radio" type="radio" name="grind" value="yes" id="radio" />Yes
+        <input id="radio" type="radio" name="grind" value="no" id="radio" />No
+        <br/><br/>
+
+		<label for="Checkbox">How do you drink your coffee?</label><br/>
+		<input id="checks" type="Checkbox" name="drink" value="sugar" id="checkbox" />With Sugar<br/>
+		<input id="checks" type="Checkbox" name="drink" value="milk" id="checkbox" />With Milk<br/>
+		<input id="checks" type="Checkbox" name="drink" value="cream" id="checkbox" />With Cream
+        <br/><br/>
+
+        <label for="dropdown">What is your coffee drink:</label><br/>
+        <select name="favorite">
+        	<option value="" id="dropdown">Please select your drink</option>
+        	<option value="french" id="dropdown">French press</option>
+        	<option value="espresso" id="dropdown">Espresso</option>
+        	<option value="drip" id="dropdown">Drip coffee</option>
+        </select>
+        <br/>
+    </fieldset>
+    <input type="submit" id="submit" value="Submit"/>
+	</form>
+
+
+</body>
+</html>
